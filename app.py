@@ -1,8 +1,9 @@
 from flask import Flask, render_template, request
 import cohere
 import re
-import os  # Import os to handle environment variables
-from urllib.parse import quote 
+import os  # Import os for handling environment variables
+from urllib.parse import quote  # Importing quote from urllib.parse
+
 app = Flask(__name__)
 
 # Use environment variable for the API key for better security
