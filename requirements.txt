@@ -1,3 +1,4 @@
-Flask
-requests
-gunicorn
+Flask==2.1.2
+Werkzeug>=2.3.0  # Ensure a compatible version
+waitress==2.1.2
+cohere==2.0.0
