@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Assistant Chat</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Brain 1.0 </h2>
+        </div>
+
+        <div class="chat-box" id="chat-box">
+            {% for message in conversation %}
+            <div class="chat-message user-message">
+                <p>{{ message.query }}</p>
+            </div>
+            <div class="chat-message ai-message">
+                <pre><code>{{ message.result|safe }}</code></pre>
+                <button class="copy-button">Copy</button>
+            </div>
+            {% endfor %}
+        </div>
+
+        <form method="POST" action="/submit" class="chat-form">
+            <div class="input-container">
+                <textarea name="query" class="chat-input" placeholder="Message Brain " required></textarea>
+                <button type="submit" aria-label="Send prompt" class="send-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path d="M12 2l7.5 20.25-7.5-4.5-7.5 4.5L12 2z" fill="currentColor"/>
+                    </svg>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const chatInput = document.querySelector('.chat-input');
+            const chatForm = document.querySelector('.chat-form');
+            const chatBox = document.getElementById('chat-box');
+
+            // Auto-scroll to the bottom when new messages are added
+            chatBox.scrollTop = chatBox.scrollHeight;
+
+            chatForm.addEventListener('submit', () => {
+                setTimeout(() => {
+                    chatInput.focus(); // Refocus on input
+                    chatBox.scrollTop = chatBox.scrollHeight; // Auto-scroll to bottom
+                }, 100);
+            });
+
+            // Copy code functionality
+            chatBox.addEventListener('click', (event) => {
+                if (event.target.classList.contains('copy-button')) {
+                    const codeBlock = event.target.previousElementSibling;
+                    navigator.clipboard.writeText(codeBlock.innerText).then(() => {
+                        event.target.innerText = 'Copied!';
+                        setTimeout(() => {
+                            event.target.innerText = 'Copy';
+                        }, 2000);
+                    }).catch(err => {
+                        console.error('Error copying text: ', err);
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

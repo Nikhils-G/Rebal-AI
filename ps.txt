@@ -1,0 +1,17 @@
+###  Problem statement shared by Jio Finance Limited 
+Revolutionize SDLC with GenAI-Powered Development Platform
+
+Problem Statement:
+The traditional software development life cycle (SDLC) is often a long, complex process involving multiple stages and teams. This challenge seeks to leverage the power of GenAI and Low-Code-No-Code (LCNC) platforms to streamline SDLC and accelerate product development.
+
+Read More
+Challenge Objective: Develop a GenAI-powered development platform that can directly translate product requirements into functional code, automating much of the development process.
+How and Why This is Possible:
+LCNC Platforms: The rise of LCNC platforms has significantly reduced the need for manual coding. These platforms allow users to visually design applications by dragging and dropping components, with code being generated automatically in the background.
+GenAI Code Generation: Generative AI models have demonstrated remarkable capabilities in understanding natural language and generating code snippets across various programming languages and platforms.
+By combining these two technologies, we can envision a future where GenAI can directly interpret product requirements, generate the necessary code, connect front-end and back-end components, and even ensure adherence to security standards.
+
+Guidelines:
+The contestants can select the LCNC and the technology stack [along with the version] which are cloud native.
+The LLMs can be trained on this target stack so that the code generated is in line with the version of the tech chosen.
+The code generated may be integrated with the CICD pipeline to demonstrate the deployment to UAT environment.  
