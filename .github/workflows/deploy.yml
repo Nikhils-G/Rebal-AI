@@ -1,9 +1,9 @@
-name: Render Auto-Deploy
+name: Glitch Auto-Deploy
 
 on:
   push:
     branches:
-      - main  # This triggers deployment when changes are pushed to the main branch
+      - main  # This triggers on pushes to the main branch
 
 jobs:
   build:
@@ -21,11 +21,3 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
-
-      - name: Deploy to Render
-        run: |
-          curl -X POST -H "Authorization: Bearer rnd_tauE42GaeLgseDxGMOmI22N0wmx0" \
-          -H "Accept: application/json" \
-          -H "Content-Type: application/json" \
-          --data '{"serviceId": "srv-crukgvdumphs73ep3dr0"}' \
-          https://api.render.com/v1/services/srv-crukgvdumphs73ep3dr0/deploys
