@@ -6,7 +6,7 @@ import os  # Import os for handling environment variables
 app = Flask(__name__)
 
 # Use environment variable for the API key for better security
-cohere_api_key = os.getenv('iHuAKEAXeX9kbpntvNA3x0BICUiBHtINYU5rho93') 
+cohere_api_key = os.getenv('iHuAKEAXeX9kbpntvNA3x0BICUiBHtINYU5rho93')  # Ensure this is correct
 co = cohere.Client(cohere_api_key)
 
 # Initialize conversation history
