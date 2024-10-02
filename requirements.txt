@@ -1,3 +1,5 @@
-Flask==2.1.2         # Compatible version of Flask
-Werkzeug>=2.0        # Werkzeug version 2.0 or higher
+Flask==2.1.2
 waitress==2.1.2
+cohere==2.0.0
+requests==2.26.0  # Optional: If you're making HTTP requests
+Werkzeug>=2.0      # Allow pip to install a compatible version
