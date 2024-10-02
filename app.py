@@ -5,8 +5,13 @@ import os
 
 app = Flask(__name__)
 
+<<<<<<< HEAD
 # Get API key from environment variable
 cohere_api_key = os.getenv('iHuAKEAXeX9kbpntvNA3x0BICUiBHtINYU5rho93')  # Ensure this is set in Render
+=======
+# Use environment variable for the API key for better security
+cohere_api_key = os.getenv('iHuAKEAXeX9kbpntvNA3x0BICUiBHtINYU5rho93')  # Set this variable in Render
+>>>>>>> 6a68726be03977924450087276c1d82d6afca1be
 co = cohere.Client(cohere_api_key)
 
 # Initialize conversation history

@@ -1,4 +1,4 @@
 Flask==2.1.2
-Werkzeug>=2.3.0  # Ensure a compatible version
+Werkzeug==2.3.0  # Ensure this version to avoid the ImportError
 waitress==2.1.2
 cohere==2.0.0
