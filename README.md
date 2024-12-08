@@ -12,7 +12,7 @@ The **GENAI-Powered SDLC Automation** platform is designed to optimize and autom
 
 This project empowers teams to focus on strategic tasks by automating repetitive processes, ensuring faster delivery cycles without compromising quality.  
 
-[Explore the Repository](https://github.com/Nikhils-G/Rebal-AI/)  
+ 
 
 ---
 
