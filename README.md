@@ -1,7 +1,6 @@
 
 
 
-Here’s a detailed, polished, and professional `README.md` for your project. This version adds more depth and insight to make it stand out.
 
 ---
 
@@ -172,24 +171,7 @@ To contribute:
 
 ---
 
-## 📧 Contact  
 
-For queries or feedback, reach out to:  
-**Nikhil S. G.**  
-Email: [your_email@example.com]  
-GitHub: [Nikhils-G](https://github.com/Nikhils-G)  
-
----
-
-**© 2024 GENAI-Powered SDLC Automation. All Rights Reserved.**
-
----
-
-Let me know if you'd like to add any extra sections or customize this further!
-
-
-
----
 
 ## 📧 Contact  
 
