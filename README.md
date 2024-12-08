@@ -1,14 +1,8 @@
 ---
-# GENAI-Powered SDLC Automation  
+# **GENAI-Powered SDLC Automation**
 
-**A platform leveraging Generative AI and Low-Code/No-Code (LCNC) technologies to revolutionize the software development lifecycle (SDLC).**
+A platform leveraging Generative AI and Low-Code/No-Code (LCNC) technologies to revolutionize the software development lifecycle (SDLC).*
 
-## 🚀 Overview  
-The **GENAI-Powered SDLC Automation** platform is designed to optimize and automate various phases of the SDLC. By integrating cutting-edge **Generative AI models** and **LCNC tools**, the platform reduces manual coding, accelerates development timelines, and enhances overall project efficiency.  
-
-This project empowers teams to focus on strategic tasks by automating repetitive processes, ensuring faster delivery cycles without compromising quality.  
-
----
 
 ## 🌟 Features  
 
